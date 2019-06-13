@@ -219,7 +219,7 @@ app.post('/dynamic-webview-new', (request, response) => {
 app.get('/show-dynamic-buttons', (request, response) => {
   const {userId, blockName} = request.query;
   
-  const displayUrl = `https://gael-myson.glitch.me/dynamic-webview?userId=${userId}&blockName=${blockName}`;
+  const displayUrl = `https://webviewchatuel.herokuapp.com/dynamic-webview?userId=${userId}&blockName=${blockName}`;
 
   response.json(createButtons(displayUrl)); 
 });
@@ -233,7 +233,7 @@ app.get('/dynamic-webview', (request, response) => {
 app.get('/show-dynamic-buttons-two', (request, response) => {
   const {userId, blockName} = request.query;
   
-  const displayUrl = `https://gael-myson.glitch.me/dynamic-webview-two?userId=${userId}&blockName=${blockName}`;
+  const displayUrl = `https://webviewchatuel.herokuapp.com/dynamic-webview-two?userId=${userId}&blockName=${blockName}`;
 
   response.json(createButtons(displayUrl)); 
 });
